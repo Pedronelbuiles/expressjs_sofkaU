@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Middleware de Autenticación</title>
+</head>
+<body>
+  <% if (user) { %>
+    <p>Bienvenido, <%= user.username %> (<a href="/logout">Cerrar sesión</a>)</p>
+  <% } else { %>
+    <p><a href="/login">Iniciar sesión</a></p>
+  <% } %>
+</body>
+</html>
